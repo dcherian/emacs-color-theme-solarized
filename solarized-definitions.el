@@ -424,10 +424,10 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (outline-2 (,@fg-cyan))
                 (outline-3 (,@fg-yellow))
                 (outline-4 (,@fg-red))
-                (outline-5 (,@fg-base0))
-                (outline-6 (,@fg-base01))
+                (outline-5 (,@fg-base1))
+                (outline-6 (,@fg-violet))
                 (outline-7 (,@fg-orange))
-                (outline-8 (,@fg-violet))
+                (outline-8 (,@fg-base0))
                 ;; show-paren - MatchParen
                 (show-paren-match (,@fmt-bold ,@fg-cyan ,@bg-base02))
                 (show-paren-mismatch (,@fmt-bold ,@fg-red ,@bg-base01))
