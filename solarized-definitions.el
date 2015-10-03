@@ -306,7 +306,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (diff-refine-removed (:inherit diff-removed ,@fmt-revr))
                 (diff-file-header (:inherit default ,@fg-blue))
                 (diff-hunk-header (:inherit default))
-                (diff-header (,@fg-base1 ,@bg-back))
+                (diff-header (,@fg-orange))
                 ;; IDO
                 (ido-only-match (,@fg-green))
                 (ido-subdir (,@fg-blue))
@@ -624,6 +624,26 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (helm-time-zone-home (,@fg-red))
                 (helm-visible-mark (,@fmt-bold ,@bg-back ,@fg-magenta))
                 (helm-w3m-bookmarks (:inherit helm-bookmark-w3m))
+                ;; magit
+                (magit-hash (,@fg-base01))
+                (magit-tag (,@fg-orange,@fmt-bold))
+                (magit-section-highlight (,@bg-base02))
+                (magit-section-heading (,@fmt-bold,@fg-magenta))
+                (magit-section-heading-selection (,@fmt-bold,@fg-orange))
+
+                (magit-diff-file-heading (,@fg-orange))
+                (magit-diff-file-heading-highlight (,@fg-orange,@bg-base02))
+                (magit-diff-added (:inherit diff-added))
+                (magit-diff-removed (:inherit diff-removed))
+                (magit-diff-context (,@fg-base00))
+                (magit-diff-added-highlight (:inherit magit-diff-added))
+                (magit-diff-removed-highlight (:inherit magit-diff-removed))
+                (magit-diff-context-highlight (:inherit magit-diff-context))
+
+                (magit-hunk-heading (,@bg-base03,@fg-base01))
+                (magit-diff-hunk-heading (@fg-base01))
+                (magit-diff-hunk-heading-highlight (:inherit magit-diff-hunk-heading))
+
                 ;; markdown
                 (markdown-bold-face (:inherit bold))
                 (markdown-header-delimiter-face (:inherit shadow))
