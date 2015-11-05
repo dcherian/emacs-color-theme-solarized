@@ -257,6 +257,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (vertical-border (,@fg-base0))
                 ;; comint
                 (comint-highlight-prompt (,@fg-blue))
+                (comint-highlight-input (,@fg-magenta))
                 ;; compilation
                 (compilation-info (,@fmt-bold ,@fg-green))
                 (compilation-warning (,@fmt-bold ,@fg-orange))
