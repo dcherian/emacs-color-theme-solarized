@@ -701,6 +701,10 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
                 (whitespace-trailing (,@fmt-bold ,@fg-red ,@bg-base02))
                 (whitespace-highlight-face (,@fg-red ,@bg-blue))
                 (whitespace-line (,@fg-magenta))
+                ;; writegood
+                (writegood-weasels-face (,@fmt-undr,@fg-cyan))
+                (writegood-passive-voice-face (,@fmt-undr,@fg-magenta))
+                (writegood-duplicates-face (:inherit error))
                 ;; rcirc
                 (rcirc-my-nick (,@fg-blue))
                 (rcirc-nick-in-message (,@fg-orange))
